@@ -17,3 +17,34 @@ body {
 .emoji:hover {
     transform: scale(1.1);
 }
+
+.links-hidden {
+    display: none;
+}
+
+#links-container {
+    display: none; /* Keep the links hidden initially */
+    position: absolute;
+    top: calc(52% + 20px); /* Adjust the space below the big poo emoji */
+    left: 50%;
+    transform: translateX(-50%); /* Center the container horizontally */
+    display: flex;
+    flex-direction: column; /* Stack the mini poos vertically */
+    align-items: center; /* Center the mini poos horizontally within the container */
+}
+
+
+/* New class for making links visible */
+.links-visible {
+    display: flex;
+}
+
+.mini-poo {
+    font-size: 2rem;
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
