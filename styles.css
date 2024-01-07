@@ -25,7 +25,7 @@ body {
 #links-container {
     display: none; /* Keep the links hidden initially */
     position: absolute;
-    top: calc(52% + 20px); /* Adjust the space below the big poo emoji */
+    top: calc(65% + 20px); /* Adjust the space below the big poo emoji */
     left: 50%;
     transform: translateX(-50%); /* Center the container horizontally */
     display: flex;
